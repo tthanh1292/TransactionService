@@ -1,0 +1,3 @@
+CREATE TABLE TransactionMaster(TransactionID INTEGER NOT NULL, 
+PatentID DOUBLE NOT NULL, Type VARCHAR(25), Amount DOUBLE,
+PRIMARY KEY(TransactionID) )
