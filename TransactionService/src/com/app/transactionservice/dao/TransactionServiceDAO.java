@@ -28,8 +28,8 @@ public class TransactionServiceDAO {
 			statement = connection.createStatement();
 			resultSet =
 					statement
-							.executeQuery("SELECT TransactionId FROM TransactionMaster WHERE type="
-							+ transactionType);
+					.executeQuery("SELECT TransactionId FROM TransactionMaster WHERE type="
+									+ transactionType);
 			while (resultSet.next()) {
 				tranctionId = Integer.parseInt(resultSet.getString("TransactionId"));
 				txIdLst.add(tranctionId);
@@ -52,11 +52,3 @@ public class TransactionServiceDAO {
 	}
 
 }
-
-// how to configure H2SQL DB in eclipse
-// NoSQL DB
-// table(s): transactionMaster - columns: transationID, patentID, Type, amount
-// How many methods do we need?
-//
-// Any extra reading?
-//

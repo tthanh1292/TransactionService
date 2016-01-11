@@ -4,7 +4,7 @@
 package com.app.transactionservice;
 
 /**
- * @author Tommy
+ * @author Thanh Trieu
  */
 public class TransactionData {
 

@@ -10,8 +10,11 @@ import javax.ws.rs.core.Response;
 
 import com.app.transactionservice.dao.TransactionServiceDAO;
 
-// **********
-// Implementation of Service which will be exposed to clients
+/**
+ * @author Thanh Trieu
+ * @Purpose: Implementation of Service which will be exposed to clients
+ */
+
 @Path("/transaction/service")
 public class TransactionService {
 
