@@ -5,12 +5,14 @@ package com.app.transactionservice;
 
 /**
  * @author Thanh Trieu
+ * 
  */
 public class TransactionData {
 
+	private int transactionId;
 	private double	amount;
 	private String	type;
-	private long		patent_id;
+	private double patent_id;
 
 	public double getAmount() {
 		return this.amount;
@@ -28,12 +30,21 @@ public class TransactionData {
 		this.type = type;
 	}
 
-	public long getPatent_id() {
+	public double getPatent_id() {
 		return this.patent_id;
 	}
 
-	public void setPatent_id(long patent_id) {
+	public void setPatent_id(double patent_id) {
 		this.patent_id = patent_id;
+	}
+	
+
+	public int getTransactionId() {
+		return transactionId;
+	}
+
+	public void setTransactionId(int transactionId) {
+		this.transactionId = transactionId;
 	}
 
 	@Override

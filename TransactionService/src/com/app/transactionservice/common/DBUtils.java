@@ -3,7 +3,6 @@ package com.app.transactionservice.common;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
 /**
  * @author Thanh Trieu
  */
@@ -12,8 +11,8 @@ public class DBUtils {
 	public static Connection getConnection() {
 		Connection conn = null;
 		try {
-			Class.forName("org.hsqldb.jdbcDrive");
-			String url = "jdbc:hsqldb:hsql://localhost/";
+			Class.forName("org.hsqldb.jdbcDriver");
+			String url = "jdbc:hsqldb:MyDB;readonly=true";
 			String name = "sa";
 			String password = "";
 
